@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('http://fonts.cdnfonts.com/css/monument-extended');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Montserrat';
+    background-color: #141414;
+  }
+  
+/*-- navbar css responsive --*/
+
+   .nav {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #141414;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'monument extended';
+    font-weight: 550;
+    color: #fab216;
+    padding: 15px 15px;
+  }
+  
+  .nav-title img {
+    width: 70px;
+    padding: 0px 10px;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 15px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 25px 65px 25px 10px;
+    
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: #fab226;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:850px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      margin: 5px;
+      width: 25px;
+      height: 8px;
+      border-top: 2px solid #fff;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #df8f10;
+      transition: all 0.5s ease-in;
+      overflow-y: hidden;
+      top: 70px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+ /*-- navbar css responsive --*/
+
+ /*-- inicio css responsive --*/
+
+ .texto-inicio {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./VipsRoadMap.jpg);
+  background-size: cover;
+  background-position: right;
+  }
+
+ .texto-inicio h1 {
+    position: relative;
+    font-size: 120px;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Monument Extended', sans-serif;
+    background: -webkit-linear-gradient(rgba(241,171,23.255), rgba(226,103,20.255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+ .sec-texto-inicio h3 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+ }
+
+  /*-- inicio css responsive --*/
+
+   /*-- boton inicio css responsive --*/
+
+   .boton-nft a {
+    text-align: center;
+   }
+
+   .btn {
+    position: relative;
+    text-align: center;
+    left: 42%;
+    padding: 35px;
+    margin: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #df8f10;
+   }
+
+
+   .btn a {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+   }
+
+   .btn:hover {
+    background-color: #fab216;
+    transition: all .9s;
+   }
+
+   .presentacion-arte h3 {
+    position: relative;
+    text-align: center;
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 60px;
+    color: #fab226;
+    }
+  
+  .artwork-container {
+    padding: 200px;
+    background-color: #141414;
+    }
+  
+    .artwork-images img {
+    width: 325px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    padding: 7px;
+    background-color: #202020;
+    }
+
+
+ /*-- artwork css responsive --*/
+
+/*-- app css responsive --*/
+ 
+.app-container {
+  position: relative;
+  background-color: #fab216;
+}
+
+.app-container-inicio h3 {
+  font-family: 'Monument Extended', sans-serif;
+  padding: 70px;
+  font-size: 60px;
+  text-align: center;
+  color: #141414;
+}
+
+.app-container-images img {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  height: 450px;
+  width: 225px; 
+}
+
+.app-container-inicio h5 {
+  position: relative;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.app-container-botones button {
+  position: relative;
+  padding: 20px 25px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #141414; 
+}
+
+.app-container-botones button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.app-container-botones button:hover {
+  background-color: #df8f10;
+}
+
+/*-- app css responsive --*/
+
+
+/*-- partnership css responsive --*/
+
+.partnerships-container {
+  position: relative;
+  background-color: #141414;
+}
+
+.partnerships-container h3 {
+  text-align: center;
+  font-family: 'Monument Extended', sans-serif;
+  padding: 50px;
+  font-size: 60px;
+  color: #fab216;
+}
+
+.partnerships-container-soldecoder {
+  padding: 50px;
+}
+
+.partnerships-container-soldecoder img {
+  height: 250px;
+  width: 250px;
+  border-radius: 35px;
+  background-color: #202020;
+}
+
+.partnerships-container-soldecoder h4 {
+  padding: 10px;
+  text-align: left;
+  margin-left: 60px;
+  color: #fab216;
+}
+
+.partnerships-container-deeznode {
+  padding: 50px;
+}
+
+.partnerships-container-deeznode img {
+  height: 250px;
+  width: 250px;
+  border-radius: 35px;
+  background-color: #202020;
+}
+
+.partnerships-container-deeznode h4 {
+  padding: 10px;
+  text-align: left;
+  margin-left: 60px;
+  color: #fab216;
+}
+
+/*-- partnership css responsive --*/
+
+
+/*-- team css responsive --*/
+
+.team-container {
+  background-color: #fab216;
+}
+
+.team-container-fila {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.team-container-fila h1 {
+  color: #141414;
+}
+
+.team-container-columna {
+  width: 100%;
+  padding: 8px 0px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Monument Extended', sans-serif;
+  color: #fab226;
+}
+
+.ceo-container {
+  box-shadow: 0px 0px 8px rgb(216, 90, 0);
+  padding: 56px 16px;
+  border-radius: 10px;
+  color: #141414;
+}
+
+.ceo-container .img-container {
+  width: 128px;
+  height: 128px;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+  background-color: #fab226;
+}
+
+.ceo-container img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #df8f10;
+}
+
+.ceo-container p {
+  font-weight: 300;
+  margin: 8px 0 16px 0;
+  text-transform: uppercase;
+}
+
+.iconos-container i {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #df8f10;
+}
+
+.iconos-container i:hover {
+  transition: all .7s;
+  background-color: #fab216;
+
+}
+
+.ceo-container a {
+  font-size: 22px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*-- team css responsive --*/
+
+/*-- footer css responsive --*/
+
+.footer-container {
+  position: relative;
+}
+
+.logo-container img {
+  height: 45px;
+  width: 50px;
+}
+
+/*-- footer css responsive --*/
+
+/*-- css --*/
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+/*-- css --*/
